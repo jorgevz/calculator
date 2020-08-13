@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div class ="wrap">
+    <form name ="Calc">
+        <table border="10">
+            <tr class="input">
+                <input type="text" name="Input" size="25">
+            </tr>
+    <tr>
+        <td id="first">
+        <input type="button" name="add" value="+" onclick="Calc.Input.value+='+'">
+        <input type="button" name="subtract" value="-" onclick="Calc.Input.value+='-'">
+        <input type="button" name="multiply" value="*" onclick="Calc.Input.value+='*'">
+        <input type="button" name="divide" value="%" onclick="Calc.Input.value+='%'">
+        <input type="button" name="equal" value="=" onclick="Calc.Input.value =eval(Calc.Input.value)">
+    ​
+    </td>
+    </tr>
+    <tr>
+        <td>
+        <input type="button" name="seven" value="7" onclick="Calc.Input.value+='7'">
+        <input type="button" name="eight" value="8" onclick="Calc.Input.value+='8'">
+        <input type="button" name="nine" value="9" onclick="Calc.Input.value+='9'">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" name="four" value="4" onclick="Calc.Input.value+='4'">
+            <input type="button" name="five" value="5" onclick="Calc.Input.value+='5'">
+            <input type="button" name="six" value="6" onclick="Calc.Input.value+='6'">
+        </td>
+    ​
+    </tr>
+    ​
+    <tr>
+        <td>
+            <input type="button" name="one" value="1" onclick="Calc.Input.value+='1'">
+            <input type="button" name="two" value="2" onclick="Calc.Input.value+='2'">
+            <input type="button" name="three" value="3" onclick="Calc.Input.value+='3'">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" name="zero" value="0" onclick="Calc.Input.value+='0'">
+            <input type="button" name="dot" value="." onclick="Calc.Input.value+='.'">
+            <input type="button" name="clear" value="clear" onclick="Calc.Input.value=''" id ="clear">
+        </td>
+    </tr>
+    ​
+    </table>
+    ​
+    </form>    
+        </div>
+    </body>
+    </html>
