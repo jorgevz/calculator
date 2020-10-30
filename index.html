@@ -13,7 +13,7 @@
     <form name ='Calc'>
         <table border="10">
             <tr class="input">
-                <input type="text" name="Input" size="25">
+                <input type="text" name="Input" size="23">
             </tr>
     <tr>
         <td id="first">
@@ -21,7 +21,6 @@
         <input type="button" name="subtract" value="-" onclick="Calc.Input.value+='-'">
         <input type="button" name="multiply" value="*" onclick="Calc.Input.value+='*'">
         <input type="button" name="divide" value="%" onclick="Calc.Input.value+='%'">
-        <input type="button" name="equal" value="=" onclick="Calc.Input.value =eval(Calc.Input.value)">
     ​
     </td>
     </tr>
@@ -53,6 +52,7 @@
             <input type="button" name="zero" value="0" onclick="Calc.Input.value+='0'">
             <input type="button" name="dot" value="." onclick="Calc.Input.value+='.'">
             <input type="button" name="clear" value="clear" onclick="Calc.Input.value=''" id ="clear">
+            <input type="button" name="equal" value="=" onclick="Calc.Input.value=eval(Calc.Input.value)">
         </td>
     </tr>
     ​
@@ -60,5 +60,11 @@
     ​
     </form>    
         </div>
+
+        <div id="user">
+        <input type="text" value="">
+        </div>
+        
     </body>
+    <script src="index.js"></script>
     </html>
