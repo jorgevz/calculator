@@ -127,7 +127,7 @@ button:nth-child(20) {
 
   #container{
   width: 380px;
-  height: 1050px;   
+  height: 100%;   
   }
   
   }
