@@ -1,15 +1,141 @@
-.wrap{
-background-color: bisque;
-color: bisque;
-width: 15%;
-margin-top: 20%;
-margin-left: 40%;
+body {
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-image: url('https://i.gifer.com/origin/64/647040910feebf23ecb28f47872d91a1_w200.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#first{
-color: bisque;
+h1 {
+  color: white;
 }
 
-.html{
-background-color: bisque;
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  text-align: center;
+  margin: 20px auto;
 }
+
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color:#7B241C ;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  height: 120px;
+}
+
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+  color: white;
+}
+
+#keypad {
+  height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.number,
+.empty {
+  background-color: white;
+}
+
+.number,
+.operator {
+  cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #d9716f;
+  color: white;
+}
+
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #d9716f;
+  color: white
+}
+
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #d9716f;
+  color: white
+}
+
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #d9716f;
+  color: white;
+}
+
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: #d9716f;
+  color: white;
+}
+
+/* media queries added for responsiveness */
+
+@media  (max-width: 800px) {
+
+  #container{
+  width: 380px;
+  height: 1050px;   
+  }
+  
+  }
+
+  @media (max-width: 700px){
+
+    #calculator{
+    width: 350px;
+    height: 520px;
+    }
+  }
