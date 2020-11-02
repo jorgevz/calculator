@@ -19,7 +19,7 @@ function printOutput(num) {
 
 }
 
-// getFormattedNumber: '9999' -> '9,999'
+
 function getFormattedNumber(num) {
   if (num == '-') {
       return '';
@@ -29,7 +29,7 @@ function getFormattedNumber(num) {
   return value;
 }
 
-// reverseNumberFormat: '9,999' -> '9999'
+
 function reverseNumberFormat(num) {
   return Number(num.replace(/,/g, ''));
 }
@@ -42,7 +42,7 @@ for (var i = 0; i < operator.length; i++) {
           printOutput('');
       } else if (this.id == 'backspace') {
           var output = reverseNumberFormat(getOutput()).toString();
-          if (output) { // if output has a value
+          if (output) { // Recognize if output has value
               output = output.substr(0, output.length - 1);
               printOutput(output);
           }
@@ -55,7 +55,7 @@ for (var i = 0; i < operator.length; i++) {
               }
           }
           if (output != '' || history != '') {
-              // condition? true:false
+              
               output = output == '' ? output : reverseNumberFormat(output);
               history = history + output;
               if (this.id == '=') {
@@ -76,9 +76,25 @@ let number = document.getElementsByClassName('number');
 for (let i = 0; i < number.length; i++) {
   number[i].addEventListener('click', function () {
       let output = reverseNumberFormat(getOutput());
-      if (output != NaN) { // if output is a number
+      if (output != NaN) { 
           output = output + this.id;
           printOutput(output);
       }
   });
 }
+
+
+$(".btn").click(function(event) {
+  $(event.target).blur();
+  processButton(event.target);
+});
+
+$(document).on("click", ".calc-history-eq", function(event) {
+  var tokens = calcHistory[parseInt($(event.target).attr("id").substring(2))].tokens;
+  console.log(parseInt($(event.target).attr("id").substring(2)));
+  console.log(calcHistory);
+  console.log(tokens);
+  tokenList = tokens;
+  displayEquation();
+});
+

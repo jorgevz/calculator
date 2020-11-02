@@ -12,7 +12,15 @@ h1 {
   color: white;
 }
 
-
+#calc-history {
+  width: 200px;
+  height: 120px;
+  background-color: #636363;
+  border-radius: 5px;
+  margin-top: 6px;
+  padding: 10px;
+  box-shadow: 0px 5px 10px #444444 inset;
+}
 
 #container {
   display: flex;
