@@ -20,6 +20,8 @@ function printOutput(num) {
 }
 
 
+
+
 function getFormattedNumber(num) {
   if (num == '-') {
       return '';
@@ -97,4 +99,12 @@ $(document).on("click", ".calc-history-eq", function(event) {
   tokenList = tokens;
   displayEquation();
 });
+
+
+//Adding the calculator history with result and calculations.
+
+let result = printOutput
+
+result = document.getElementById('hist').innerText;
+
 
